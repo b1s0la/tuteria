@@ -47,6 +47,7 @@ h1,h2,h3,h4,h5,h6,p,button,b{
     border: 3px solid #9c9999;
     color: black;
     transition: all .8s ease;
+    outline: none !important;
     margin-bottom: 4%;
 }
 .quet:hover i{
