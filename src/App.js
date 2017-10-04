@@ -1,10 +1,29 @@
 import React, { Component } from 'react';
 /*import logo from './logo.svg';*/
-
+import {BarChart} from 'react-easy-chart';
 import './App.css';
 
 class App extends Component {
 
+
+   mouseOverHandler(d, e) {
+    this.setState({
+      showToolTip: true,
+      top: `${e.screenY - 10}px`,
+      left: `${e.screenX + 10}px`,
+      y: d.y,
+      x: d.x});
+  }
+
+  mouseMoveHandler(e) {
+    if (this.state.showToolTip) {
+      this.setState({top: `${e.y - 10}px`, left: `${e.x + 10}px`});
+    }
+  }
+
+  mouseOutHandler() {
+    this.setState({showToolTip: false});
+  }
 
   render() {
     return (
@@ -70,7 +89,28 @@ class App extends Component {
                         
                            
 
-                          
+                          <BarChart
+                            axisLabels={{x: 'My x Axis', y: 'My y Axis'}}
+                            axes
+                            grid
+                            colorBars
+                            height={250}
+                            width={650}
+                            data={[
+                              {
+                                x: 'A',
+                                y: 46
+                              },
+                              {
+                                x: 'B',
+                                y: 26
+                              }
+                            ]}
+                            mouseOverHandler={this.mouseOverHandler}
+                            mouseOutHandler={this.mouseOutHandler}
+                            mouseMoveHandler={this.mouseMoveHandler}
+                            yDomainRange={[0, 100]}
+                          />
                         
                       </div>
                       
