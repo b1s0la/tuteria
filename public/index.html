@@ -22,8 +22,40 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+
+    <script type="text/javascript">
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+  theme: "light1", // "light2", "dark1", "dark2"
+  animationEnabled: false, // change to true    
+  title:{
+    text: ""
+  },
+  data: [
+  {
+    // Change type to "bar", "area", "spline", "pie",etc.
+    type: "column",
+    dataPoints: [
+      { label: "Salt and Vinegar",  y: 10  },
+      { label: "Ready Salted", y: 15  },
+      { label: "Cheese & Onion", y: 25  },
+      { label: "Prawn Cocktail",  y: 30  },
+      { label: "Bacon",  y: 28  },
+      { label: "Roasted Chicken",  y: 28  },
+      { label: "Other",  y: 28  }
+    ]
+  }
+  ]
+});
+chart.render();
+
+}
+</script>
   </head>
   <body>
+    
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>

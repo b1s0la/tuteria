@@ -1,22 +1,5 @@
-/*.breadcrumb>li+li:before {
-    content: ""
-}
 
-a{
-    color: black;
-}
-a:hover{
-    color: black;
-}
-ol:hover{
 
-}
-a.canvasjs-chart-credit{
-    display: none;
-}
-div.canvasjs-chart-tooltip{
-    transition: none;
-}*/
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,600,800');
 /*@font-face{
     font-family: Nunito;
@@ -25,6 +8,9 @@ div.canvasjs-chart-tooltip{
 h1,h2,h3,h4,h5,h6,p,button,b{
     font-family: Nunito !important;
     font-weight: 800 !important;
+}
+a.navbar-brand{
+  color: black;
 }
 .well-quz {
     border-radius: 1px;
@@ -44,7 +30,7 @@ h1,h2,h3,h4,h5,h6,p,button,b{
     padding: 11px 14px;
     background: white;
     border-radius: 1px;
-    border: 3px solid #9c9999;
+    border: 3px solid lightgrey;
     color: black;
     transition: all .8s ease;
     outline: none !important;
@@ -104,7 +90,7 @@ h1,h2,h3,h4,h5,h6,p,button,b{
     /* right: 7%; */
     margin-top: -4%;
     margin-right: -5%;
-    background: #9c9999;
+    background: lightgrey;
     transition: all .4s ease;
     padding: 4px;
     color: #fff;
@@ -120,16 +106,63 @@ h1,h2,h3,h4,h5,h6,p,button,b{
 }
 .butts button{
     border-radius: 4px;
-    color: black;
+    /*color: black;*/
     padding: 10px 30px;
-    margin-left: 5%;
+    /*margin-left: 5%;
     margin-top: 8%;
-    margin-bottom: 6%;
+    margin-bottom: 6%;*/
 }
+.prev{
+  background: lightgrey;
+  color: #756868;
+  border: 1px solid lightgrey;
+}
+.fa-chevron-left:before {
+    content: "\f053";
+    margin-left: -47px;
+}
+.fa-chevron-right:before {
+    content: "\f054";
+    margin-left: 50px;
+}
+
+/*.fa-chevron-left{
+  margin-left: -40px;
+}*/
 /*.butts i:nth-child(1){
     margin-left: 20%;
 }*/
+a.canvasjs-chart-credit{
+  display: none;
+}
 #chartContainer{
   height: 170px; 
   width: 100%;
 }
+
+
+@media only screen and (max-width: 350px){
+  .number{
+    margin-left: -24px;
+  }
+
+    .quet i {
+        margin-top: -7%;
+        margin-right: -9%;
+        
+    }
+    .butts button{
+  padding: 4px 2px;
+  font-size: 10px;
+    
+  }
+    .fa-chevron-left:before {
+       margin-left: -28px;
+       font-size: 10px;
+}
+.fa-chevron-right:before {
+    margin-left: 8px;
+    font-size: 8px;
+}
+
+ }
