@@ -1,0 +1,134 @@
+/*.breadcrumb>li+li:before {
+    content: ""
+}
+
+a{
+    color: black;
+}
+a:hover{
+    color: black;
+}
+ol:hover{
+
+}
+a.canvasjs-chart-credit{
+    display: none;
+}
+div.canvasjs-chart-tooltip{
+    transition: none;
+}*/
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,800');
+/*@font-face{
+    font-family: Nunito;
+    src: url(./Nunito/Nunito-ExtraLight.ttf);
+}*/
+h1,h2,h3,h4,h5,h6,p,button,b{
+    font-family: Nunito !important;
+    font-weight: 800 !important;
+}
+.well-quz {
+    border-radius: 1px;
+    padding: 38px;
+    border: none;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.43);
+    background: white;
+}
+.quiz b{
+    float: left;
+    font-size: 10px;
+    font-style: bold !important;
+    color:#9c9999 !important;
+}
+
+.quet {
+    padding: 11px 14px;
+    background: white;
+    border-radius: 1px;
+    border: 3px solid #9c9999;
+    color: black;
+    transition: all .8s ease;
+    margin-bottom: 4%;
+}
+.quet:hover i{
+    background:#71b971!important;
+}
+.quet:focus i{
+    background:#71b971!important;
+}
+/*.quet:focus i{
+    background: white;
+    border: 3px solid #71b971;
+    color: black;
+}*/
+
+.quet:hover{
+    background: white;
+    border: 3px solid #71b971;
+    color: black;
+}
+.quet:focus{
+    background: white;
+    border: 3px solid #71b971;
+    color: black;
+}
+/*button.quet:before{
+    content:"\f10c";
+    font-family: FontAwesome;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    background: green;
+    color: white;
+    padding: 2px;
+
+}*/
+.quet-active i {
+    float: right;
+    font-size: 10px;
+    font-style: bold !important;
+    /* position: absolute; */
+    /* right: 7%; */
+    margin-top: -4%;
+    margin-right: -5%;
+    background: #71b971 !important;
+    padding: 4px;
+    color: #fff;
+    font-size: 14px;
+}
+.quet i {
+    float: right;
+    font-size: 10px;
+    font-style: bold !important;
+    /* position: absolute; */
+    /* right: 7%; */
+    margin-top: -4%;
+    margin-right: -5%;
+    background: #9c9999;
+    transition: all .4s ease;
+    padding: 4px;
+    color: #fff;
+    font-size: 14px;
+}
+.number {
+    color: #71b971;
+    font-weight: 100 !important;
+    -webkit-font-smoothing: antialiased;
+}
+.quet-active{
+     border: 3px solid #71b971;
+}
+.butts button{
+    border-radius: 4px;
+    color: black;
+    padding: 10px 30px;
+    margin-left: 5%;
+    margin-top: 8%;
+    margin-bottom: 6%;
+}
+/*.butts i:nth-child(1){
+    margin-left: 20%;
+}*/
+#chartContainer{
+  height: 170px; 
+  width: 100%;
+}
